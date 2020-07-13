@@ -1,4 +1,4 @@
-![The Old Guard Logo](smallLogopng.png)
+![The Old Guard Logo](banner.png)
 # theOldGuard
 This is the createChinaApp cli tool
 
