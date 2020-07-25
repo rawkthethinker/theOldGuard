@@ -37,7 +37,7 @@ and run
 
 
 ### ToDo
->*create a add to client new remote for purposes of seperating the tool and the app
->*a hook file generator based on it being the most used to start a page.
->*a components module for the components
->*create a push to vercel for deployment purposes. !still thinking about it 
+1. create a add to client new remote for purposes of seperating the tool and the app
+2. a hook file generator based on it being the most used to start a page.
+3. a components module for the components
+4. create a push to vercel for deployment purposes. !still thinking about it 
