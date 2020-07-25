@@ -1,8 +1,10 @@
+const cli : string = "https://raw.githubusercontent.com/MimiXSauveur/theOldGuard/master/cli.ts";
+
 async function runCli(){
 
     try {
          const gitProcess = Deno.run({
-            cmd: ["deno","run","--allow-read","--allow-write","--allow-run", "cli.ts", Deno.args[0]],
+            cmd: ["deno","run","--allow-read","--allow-write","--allow-run", cli, Deno.args[0]],
             stdout: "piped",
             stderr: "piped",
           });
