@@ -41,3 +41,5 @@ and run
 2. a hook file generator based on it being the most used to start a page.
 3. a components module for the components
 4. create a push to vercel for deployment purposes. !still thinking about it 
+5. a app template for SPA
+6. packaging this in npm for ease of use maybe for now just cloning works(creating more easy way to pull cli)
