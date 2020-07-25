@@ -42,4 +42,5 @@ and run
 3. a components module for the components
 4. create a push to vercel for deployment purposes. !still thinking about it 
 5. a app template for SPA
-6. packaging this in npm for ease of use maybe for now just cloning works(creating more easy way to pull cli)
+6. make the cloud version more user freindly
+    :allow them to be able to name the client folder for multiple apps
