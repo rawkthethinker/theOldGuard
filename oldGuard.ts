@@ -17,7 +17,7 @@ async function runCli(){
           } else {
             const rawError = await gitProcess.stderrOutput();
             const errorString = new TextDecoder().decode(rawError);
-            console.log("please indicate the project you would like to create");
+            console.log(errorString,"please indicate the project you would like to create");
           }
           
           Deno.exit(code);
