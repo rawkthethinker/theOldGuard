@@ -65,7 +65,8 @@ if (code === 0) {
   const rawOutput = await gitProcess.output();
   await Deno.stdout.write(rawOutput);
 
-  const status  = await commandGit("rm",["-rf","--cached"," ."]);
+  //not needed in cloud version
+  //const status  = await commandGit("rm",["-rf","--cached"," ."]);
 
 
   if(status === true ){
