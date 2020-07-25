@@ -43,3 +43,4 @@ and run
 4. create a push to vercel for deployment purposes. !still thinking about it 
 5. a app template for SPA
 6. make the cloud version more user freindly
+    :allow them to be able to name the client folder for multiple apps
