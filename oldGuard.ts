@@ -11,7 +11,6 @@ async function runCli(){
           });
       
      
-
           const { code } = await gitProcess.status();
 
           if (code === 0) {
