@@ -65,19 +65,7 @@ if (code === 0) {
   const rawOutput = await gitProcess.output();
   await Deno.stdout.write(rawOutput);
   
-    const status  = await commandGit("rm",["-rf","--cached"," ."]);
-
-
-  if(status === true ){
-    Deno.chdir("client/china");
-   
-    const result = await commandGit("remote",["rename","origin","china"]);
-
-    if(result == true){
-   
-      console.log("happy coding...🦖 you can contribute with the china remote");
-    }
-    
+  
 
 } else {
   const rawError = await gitProcess.stderrOutput();
