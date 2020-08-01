@@ -1,5 +1,5 @@
 //update to prod cloud cli
-const cli : string = "https://raw.githubusercontent.com/MimiXSauveur/theOldGuard/master/cli.ts";
+const cli : string = "https://raw.githubusercontent.com/rawkthethinker/theOldGuard/cloudCli/cli.ts";
 
 async function runCli(){
 
