@@ -27,13 +27,15 @@ Install Deno Extension
         
 To Create A app run
         
-`deno run --allow-run oldGuard.ts createApp `
+`deno run --allow-run oldguard/index.ts  createApp `
 which will then create a client folder with the china framework app created, and developed on parse and react
 so
 `cd client\client `
 and run
 `npm install npm start`
 
+## To Create A Template
+`deno run --allow-run oldguard/index.ts  template {foldername} [{filetype}](./oldguard/io/temp/templates) {templatename}`
 
 
 ### ToDo
@@ -44,3 +46,5 @@ and run
 5. a app template for SPA
 6. packaging this in npm for ease of use maybe for now just cloning works(creating more easy way to pull cli)
 7. Create A cloud flag to check if cloud cli
+8. Clean up code
+9. Manipulate from Browser

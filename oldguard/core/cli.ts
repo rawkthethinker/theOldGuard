@@ -1,3 +1,5 @@
+import Template from '../io/temp/temp.ts'
+
 let isAppCreated : Boolean | undefined;
 
 async function createApp(){
@@ -43,7 +45,7 @@ async function createFolder(){
   }catch(e){
 
     if(Deno.errors.AlreadyExists.name == e.name){
-      console.log("File Already Exists")
+      console.log("Folder Already Exists")
     }
 
   }
@@ -143,8 +145,8 @@ switch (expr) {
     console.log('Creating Server');
     // expected output: "Mangoes and papayas are $2.79 a pound."
     break;
-  case 'Template':
-    console.log('Impleting Template chosen');
+  case 'template':
+    Template()
     // expected output: "Mangoes and papayas are $2.79 a pound."
     break;
   default:
