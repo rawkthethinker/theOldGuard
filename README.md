@@ -38,7 +38,7 @@ and run
 `deno run --allow-run oldguard/index.ts  template {subfoldername} {foldername} {filetype} {templatename}`
 
 `deno run --allow-run oldguard/index.ts  template server page strandard home`
-[{filetype}](./oldguard/io/temp/templates)
+[{filetype}](./io/temp/templates)
 
 ### ToDo
 1. create a add to client new remote for purposes of seperating the tool and the app
