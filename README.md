@@ -35,8 +35,8 @@ and run
 `npm install npm start`
 
 ## To Create A Template
-`deno run --allow-run oldguard/index.ts  template {foldername} [{filetype}](./oldguard/io/temp/templates) {templatename}`
-
+`deno run --allow-run oldguard/index.ts  template {foldername} {filetype} {templatename}`
+[{filetype}](./oldguard/io/temp/templates)
 
 ### ToDo
 1. create a add to client new remote for purposes of seperating the tool and the app
