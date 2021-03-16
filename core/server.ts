@@ -1,14 +1,32 @@
 import { serve, ServerRequest, Response} from "https://deno.land/std/http/server.ts";
+import { Status} from "https://deno.land/std/http/http_status.ts";
 import { serveFile } from "https://deno.land/std/http/file_server.ts";
 
 
 const server = serve({ port: 8000 });
 console.log("http://localhost:8000/");
 for await (const req of server) {
-  
-    let response: Response | undefined;
-    response =  await serveFile(req, './index.html');
 
+    let params = req.url.split("?")[1]
+  console.log(params)
+    let searchParams = new URLSearchParams(params);
+    const decoder = new TextDecoder();
+    const buf: Uint8Array = await Deno.readAll(req.body);
+    console.log(decoder.decode(buf))
+    console.log(req.method)
+    console.log(searchParams.get("type"))
+
+
+    let response: Response  = {};
+    try{
+        response =  await serveFile(req, './index.html');
+    }catch{
+        response.body = JSON.stringify({ name: "Hello World" })
+    }
+
+    req.headers.set("Content-Type", "application/json");
+
+    response.status = Status.OK
     req.respond(response);
     serverLog(req,response!);
     
