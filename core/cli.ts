@@ -1,4 +1,5 @@
 import Template from '../io/temp/temp.ts'
+import App from '../io/app/index.ts'
 
 let isAppCreated : Boolean | undefined;
 
@@ -137,7 +138,7 @@ if (import.meta.main) {
   
   const expr = Deno.args[0];
 switch (expr) {
-  case 'createApp':
+  case 'spa':
     console.log("starting to create app..."); 
     createApp();
     break;
@@ -147,6 +148,10 @@ switch (expr) {
     break;
   case 'template':
     Template()
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+    case 'app':
+      App()
     // expected output: "Mangoes and papayas are $2.79 a pound."
     break;
   default:

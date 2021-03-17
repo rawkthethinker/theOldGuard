@@ -25,9 +25,9 @@ Install Deno Extension
 
 > This tool is still in development
         
-To Create A app run
+## To Create A app run
         
-`deno run --allow-run oldguard/index.ts  createApp `
+`deno run --allow-run oldguard/index.ts  spa `
 which will then create a client folder with the china framework app created, and developed on parse and react
 so
 `cd client\client `

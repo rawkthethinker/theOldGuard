@@ -8,7 +8,7 @@ const template = async () => {
     console.log(`creating template ${Deno.args}`)
 
     let status = await CraeteFolder(`./${Deno.args[2]}/${Deno.args[1]}`)
-    console.log(status)
+    console.log(`Creating ./${Deno.args[2]}/${Deno.args[1]} Folder`,status)
 
     if (status) {
 
