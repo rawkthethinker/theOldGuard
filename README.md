@@ -25,7 +25,7 @@ Install Deno Extension
 
 > This tool is still in development
         
-## To Create A app run
+## To Create A SPA run _best on linux_
         
 `deno run --allow-run oldguard/index.ts  spa `
 which will then create a client folder with the china framework app created, and developed on parse and react
@@ -39,6 +39,10 @@ and run
 
 `deno run --allow-run oldguard/index.ts  template server page strandard home`
 [{filetype}](./io/temp/templates)
+`deno run --allow-run oldguard/index.ts  app `
+
+## To Create A App run 
+
 
 ### ToDo
 1. create a add to client new remote for purposes of seperating the tool and the app
