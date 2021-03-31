@@ -6,7 +6,12 @@ export default function Standard() {
     const router = useRouter();
 
     useEffect(() => {
-        console.log(router.query)
+        try {
+            console.log(router.query)
+        } catch (e) {
+            console.log(e)
+
+        }
         return () => {
             console.log("clean up")
         }
