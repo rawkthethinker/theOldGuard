@@ -13,7 +13,7 @@ const app = async () => {
         console.log(`creating ${Deno.args}`)
         console.log(`in folder ${Deno.cwd()}`)
         //await Deno.chmod(Deno.cwd(), 0o777);
-        console.log(`Creating ${name} Folder`)
+        //console.log(`Creating ${name} Folder`)
         await CraeteFolder(`./test`)
 
 

@@ -3,7 +3,6 @@ async function runCli(){
     try {
          const gitProcess = Deno.run({
             cmd: ["deno","run","--allow-read","--allow-write","--allow-run", "./oldguard/core/cli.ts", ...Deno.args],
-            stdout: "piped",
             stderr: "piped",
           });
       
@@ -12,8 +11,11 @@ async function runCli(){
           const { code } = await gitProcess.status();
 
           if (code === 0) {
-            const rawOutput = await gitProcess.output();
-            await Deno.stdout.write(rawOutput);
+            //const rawOutput = await gitProcess.output();
+            // await Deno.stdout.write(rawOutput);
+
+            // const rawInput = await gitProcess.stdin.write();
+            //await Deno.stdout.write(rawOutput);
           } else {
             const rawError = await gitProcess.stderrOutput();
             const errorString = new TextDecoder().decode(rawError);
@@ -23,7 +25,7 @@ async function runCli(){
           Deno.exit(code);
     }
     catch(e){
-        console.log(e)
+        console.log("failing to do something",e)
     }
 
   }
