@@ -18,12 +18,12 @@ module.exports = withPWA({
       },)
      
 
-      config.resolve.alias['sauveur_style'] = path.join(__dirname, 'core/styles/');
-      config.resolve.alias['sauveur_images'] = path.join('public/images/');
-      config.resolve.alias['sauveur_core'] = path.join(__dirname, 'core/technical/core/');
-      config.resolve.alias['sauveur_technical'] = path.join(__dirname, 'core/technical/');
-      config.resolve.alias['sauveur_elements'] = path.join(__dirname, 'core/technical/elements');
-      config.resolve.alias['sauveur_design'] = path.join(__dirname, 'core/design/');
+      // config.resolve.alias['sauveur_style'] = path.join(__dirname, 'core/styles/');
+      // config.resolve.alias['sauveur_images'] = path.join('public/images/');
+      // config.resolve.alias['sauveur_core'] = path.join(__dirname, 'core/technical/core/');
+      // config.resolve.alias['sauveur_technical'] = path.join(__dirname, 'core/technical/');
+      // config.resolve.alias['sauveur_elements'] = path.join(__dirname, 'core/technical/elements');
+      // config.resolve.alias['sauveur_design'] = path.join(__dirname, 'core/design/');
 
     //   config.resolve.modules.push = {
          

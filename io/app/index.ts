@@ -16,9 +16,15 @@ const app = async () => {
 
 
         try {
+            //await Deno.create(".gitmodules");
+            //await Deno.chmod(".gitmodules",0o777)
             await getList(`${directory}/resources`)
-        } catch {
-            console.log("unable to copy files")
+            await sdk.commandGit('submodule',['add','https://github.com/sauveurXrawk/bookish-octo-memory.git','./components'])
+             
+
+      
+        } catch(err) {
+            console.log("unable to copy files",err)
         }
 
 
@@ -30,7 +36,7 @@ const app = async () => {
 }
 
 
-async function getList(path: string, pre = " ") {
+async function getList(path: string, pre = "") {
     for await (const dirEntry of Deno.readDir(path)) {
 
         const entryPath = `${path}/${dirEntry.name}`;

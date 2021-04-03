@@ -9,4 +9,4 @@ async function prompt(message: string = "") {
 
 
 
-export prompt;
+export default prompt;
