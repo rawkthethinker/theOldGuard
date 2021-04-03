@@ -1,10 +1,7 @@
-import cmdState from '../../utils/cmd.ts'
-import CraeteFolder from '../../utils/folder.ts'
+import * as sdk from "../../imports/index.ts";
+const directory = `./${sdk.env.get('tool')}/io/app`
 
 
-const directory = "./oldguard/io/app"
-// const Windowsdirectory = "C:\\Users\\Rawk\\Documents\\codebender\\sprint\\oldguard\\io\\app\\resources"
-const Windowsdirectory = "C:\\Users\\Rawk\\Documents\\codebender\\sprint\\hello"
 const app = async () => {
 
 
@@ -14,7 +11,7 @@ const app = async () => {
         console.log(`in folder ${Deno.cwd()}`)
         //await Deno.chmod(Deno.cwd(), 0o777);
         //console.log(`Creating ${name} Folder`)
-        await CraeteFolder(`./test`)
+        //await sdk.CraeteFolder(`./`)
 
 
 
@@ -44,13 +41,13 @@ async function getList(path: string, pre = " ") {
         //console.log();
         if (dirEntry.isDirectory) {
 
-            await CraeteFolder(`./test/${dest}`);
+            await  sdk.CraeteFolder(`./${dest}`);
 
             await getList(entryPath, `${dest}/`);
 
 
         } else if (dirEntry.isFile) {
-            await Deno.copyFile(entryPath, `./test/${dest}`);
+            await Deno.copyFile(entryPath, `./${dest}`);
         }
     }
 

@@ -23,8 +23,6 @@ const template = async () => {
         try {
              console.log(`generating template`)
 
-            //         // await Deno.copyFile(`${directory}/templates/${Deno.args[3]}.js`, `./${Deno.args[2]}/${Deno.args[1]}/${Deno.args[4]}.js`);
-
             await Deno.copyFile(`${directory}/templates/${temp}.js`, `./${main}/${sub}/${name}.js`);
 
             console.log('template generated')
