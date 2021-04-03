@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build ",
     "start": "next start",
+    "tool":"deno run --allow-run --allow-read --allow-env oldguard/index.ts local",
     "test": "echo the test goes here"
   },
   "dependencies": {

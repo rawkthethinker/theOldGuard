@@ -5,8 +5,6 @@ import { App, Container } from 'components'
 
 function MyApp({Component,pageProps}) {
 
-  //console.log("props", pageProps)
-  //console.log("component", Component().home)
   return (
 
      Component().home ? (
