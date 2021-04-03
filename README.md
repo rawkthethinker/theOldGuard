@@ -40,7 +40,7 @@ and run
 
 `deno run --allow-run oldguard/index.ts  template server page strandard home`
 [{filetype}](./io/temp/templates)
-`deno run --allow-run oldguard/index.ts  app `
+`deno run --allow-run oldguard/index.ts  local app `
 
 ## To Create A App run 
 
