@@ -1,5 +1,9 @@
+import Template from '../io/temp/temp.ts'
+import App from '../io/app/index.ts'
+
 let isAppCreated : Boolean | undefined;
 
+//#region update to new file
 async function createApp(){
 
   try{
@@ -43,7 +47,7 @@ async function createFolder(){
   }catch(e){
 
     if(Deno.errors.AlreadyExists.name == e.name){
-      console.log("File Already Exists")
+      console.log("Folder Already Exists")
     }
 
   }
@@ -131,11 +135,16 @@ async function commandGit(command: string, flags: string[]){
   }
 }
 
+
+//#endregion
+
+
+
 if (import.meta.main) {
   
-  const expr = Deno.args[0];
+  const expr = Deno.args[1];
 switch (expr) {
-  case 'createApp':
+  case 'spa':
     console.log("starting to create app..."); 
     createApp();
     break;
@@ -143,8 +152,13 @@ switch (expr) {
     console.log('Creating Server');
     // expected output: "Mangoes and papayas are $2.79 a pound."
     break;
-  case 'Template':
-    console.log('Impleting Template chosen');
+  case 'template':
+    Template()
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+    case 'app':
+      console.log("init app");
+      App();
     // expected output: "Mangoes and papayas are $2.79 a pound."
     break;
   default:

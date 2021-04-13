@@ -19,21 +19,30 @@ To learn more about [Deno](https://deno.land/).
  ### Lets begin
  This is a toolchain to setup and manage your software development
 
+- need to have an initialized git repository
 Install Deno Extension
 [Deno Extension](https://www.codenewbie.org/podcast/how-to-harness-privilege-to-create-equitable-design). 
 
 
 > This tool is still in development
         
-To Create A app run
+## To Create A SPA run _best on linux_
         
-`deno run --allow-run oldGuard.ts createApp `
+`deno run --allow-run oldguard/index.ts  spa `
 which will then create a client folder with the china framework app created, and developed on parse and react
 so
 `cd client\client `
 and run
 `npm install npm start`
 
+## To Create A Template
+`deno run --allow-run oldguard/index.ts  template {subfoldername} {foldername} {filetype} {templatename}`
+
+`deno run --allow-run oldguard/index.ts  template server page strandard home`
+[{filetype}](./io/temp/templates)
+` deno run --allow-run --allow-read --allow-env oldguard/index.ts local app `
+
+## To Create A App run 
 
 
 ### ToDo
@@ -44,3 +53,5 @@ and run
 5. a app template for SPA
 6. packaging this in npm for ease of use maybe for now just cloning works(creating more easy way to pull cli)
 7. Create A cloud flag to check if cloud cli
+8. Clean up code
+9. Manipulate from Browser
